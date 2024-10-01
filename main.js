@@ -19,16 +19,26 @@ listaNosotros.addEventListener("click", ()=>{
 
 })
 
+function saludar() {
+  const mensajeDiv = document.getElementById("mensaje");
+  mensajeDiv.innerHTML += "<p>Bienvenido al cotizador de préstamos online</p>";
+  mensajeDiv.innerHTML += "<p>Para usar nuestro servicio debe ser mayor de 18 años</p>";
+}
+
+saludar();
+
 
 /* alerta de bienvenida al sitio funcion saludar*/
-function saludar() {
+/*function saludar() {
   alert("Bienvenido al cotizador de prestamos online");
   alert("Para usar nuestro servicio debe ser mayor de 18 años");
 }
 saludar();
+*/
 
 /*ingreso variable nombre*/
 let nombreUsuario = prompt("Ingrese su nombre");
+
 
 /* ciclo validacion de nombre*/
 while (nombreUsuario === null || nombreUsuario == "" || !isNaN(nombreUsuario)) {
